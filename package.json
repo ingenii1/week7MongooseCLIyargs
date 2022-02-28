@@ -9,9 +9,19 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.0",
+    "mongodb": "^4.4.0",
     "mongoose": "^6.2.0",
     "yargs": "^17.3.1"
   },
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingenii1/week7MongooseCLIyargs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ingenii1/week7MongooseCLIyargs/issues"
+  },
+  "homepage": "https://github.com/ingenii1/week7MongooseCLIyargs#readme",
+  "devDependencies": {},
   "description": ""
 }

@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const filmSchema = mongoose.Schema({
     name:{
@@ -6,13 +6,26 @@ const filmSchema = mongoose.Schema({
         required:true,
         
     },
+    
     actor:{
         type:String,
-        default :'actor uknown'
+        required:true,
+        default :'actor uknown',
+        
 
-    }
-})
+    },
+    
+    year: {
+    type: Number,
+    required: false,
+  },
 
-const FilmModel = mongoose.model('Movies',filmSchema)
+  update: {
+    type: String,
+    required: false,
+  },
+});
 
-module.exports = FilmModel
+const FilmModel = mongoose.model('Movies',filmSchema);
+
+module.exports = FilmModel;
